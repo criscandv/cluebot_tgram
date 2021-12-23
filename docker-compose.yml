@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command: rerun --background ruby bot.rb
+    volumes:
+      - .:/usr/src/app
+    environment:
+      TELEGRAM_BOT_TOKEN: 5009770097:AAHNDFCHt6opUs4Bu1uJ9nQFMVoJIz1sUSs
